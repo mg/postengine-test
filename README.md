@@ -12,7 +12,7 @@ We can encapsulate the core strategy of the previous example in a code structure
         err      error
     }
 
-The iterator consists  of the *agenda*, the current value in the *node* item, and a function to generate new items.
+The iterator consists of the *agenda*, the current value in the *node* item, and a function to generate new items.
 
     func Dfs(root interface{}, children ChildrenFunc) i.Forward {
         dfs := depthfirst{children: children}
